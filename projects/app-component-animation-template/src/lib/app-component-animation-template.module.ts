@@ -1,10 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
-import { AppComponent } from './app.component';
+import { AppComponentAnimationTemplateComponent } from './app-component-animation-template.component';
 import { BounceAnimationComponent } from './bounce-animation/bounce-animation.component';
 import { FlipAnimationComponent } from './flip-animation/flip-animation.component';
 import { FadeAnimationComponent } from './fade-animation/fade-animation.component';
@@ -12,17 +7,21 @@ import { RollAnimationComponent } from './roll-animation/roll-animation.componen
 import { ZoomAnimationComponent } from './zoom-animation/zoom-animation.component';
 import { RotateAnimationComponent } from './rotate-animation/rotate-animation.component';
 import { OthersAnimationComponent } from './others-animation/others-animation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponentAnimationTemplateComponent,
     BounceAnimationComponent,
     FlipAnimationComponent,
     FadeAnimationComponent,
     RollAnimationComponent,
     ZoomAnimationComponent,
     RotateAnimationComponent,
-    OthersAnimationComponent,
+    OthersAnimationComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +29,15 @@ import { OthersAnimationComponent } from './others-animation/others-animation.co
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [
+    AppComponentAnimationTemplateComponent,
+    BounceAnimationComponent,
+    FlipAnimationComponent,
+    FadeAnimationComponent,
+    RollAnimationComponent,
+    ZoomAnimationComponent,
+    RotateAnimationComponent,
+    OthersAnimationComponent
+  ]
 })
-export class AppModule { }
+export class AppComponentAnimationTemplateModule { }

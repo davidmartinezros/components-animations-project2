@@ -1,0 +1,35 @@
+{
+  "name": "app-component-animation-template",
+  "version": "0.0.5",
+  "license": "MIT",
+  "description": "An easy implementation of component animations for Angular, where you can load the animation into any text or whatever you want.",
+  "author": "David Martinez Ros",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidmartinezros/components-animations-project2"
+  },
+  "bugs": {
+    "url": "https://github.com/davidmartinezros/components-animations-project2/issues"
+  },
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "template",
+    "animation",
+    "animations",
+    "style",
+    "styles",
+    "component",
+    "easy way",
+    "animations for dummies",
+    "app-component-animation-template"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "@angular/platform-browser": "^9.0.3",
+    "@angular/platform-browser-animation": "^9.0.3",
+    "tslib": "^1.10.0"
+  }
+}

@@ -119,6 +119,46 @@
           }
         }
       }
+    },
+    "AppComponentAnimationTemplate": {
+      "projectType": "library",
+      "root": "projects/app-component-animation-template",
+      "sourceRoot": "projects/app-component-animation-template/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/app-component-animation-template/tsconfig.lib.json",
+            "project": "projects/app-component-animation-template/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/app-component-animation-template/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/app-component-animation-template/src/test.ts",
+            "tsConfig": "projects/app-component-animation-template/tsconfig.spec.json",
+            "karmaConfig": "projects/app-component-animation-template/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/app-component-animation-template/tsconfig.lib.json",
+              "projects/app-component-animation-template/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "components-animations-project2"
 }

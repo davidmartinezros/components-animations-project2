@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "app-component-animation-template": [
+        "dist/app-component-animation-template/app-component-animation-template",
+        "dist/app-component-animation-template"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -71,5 +71,5 @@ import { trigger, style, animate, transition } from '@angular/animations';
 export class RotateAnimationComponent {
 
   show: boolean = false;
-  
+
 }

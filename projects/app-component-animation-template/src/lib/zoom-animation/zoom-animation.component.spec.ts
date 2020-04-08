@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { RootAnimationComponent } from './root-animation.component';
+import { ZoomAnimationComponent } from './zoom-animation.component';
 
-describe('RootAnimationComponent', () => {
-  let component: RootAnimationComponent;
-  let fixture: ComponentFixture<RootAnimationComponent>;
+describe('ZoomAnimationComponent', () => {
+  let component: ZoomAnimationComponent;
+  let fixture: ComponentFixture<ZoomAnimationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RootAnimationComponent ]
+      declarations: [ ZoomAnimationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RootAnimationComponent);
+    fixture = TestBed.createComponent(ZoomAnimationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
