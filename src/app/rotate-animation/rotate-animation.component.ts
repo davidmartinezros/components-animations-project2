@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -70,6 +70,9 @@ import { trigger, style, animate, transition } from '@angular/animations';
 })
 export class RotateAnimationComponent {
 
-  show: boolean = false;
+  @Input() text: String;
+  @Input() image: String;
   
+  show: boolean = false;
+
 }

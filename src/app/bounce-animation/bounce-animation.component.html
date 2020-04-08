@@ -7,6 +7,7 @@
 </p>
 <div [@bounceIn]="show" (click)="show = !show;">
   <span class="text">
-    <h1>David</h1>
+    <h1 *ngIf="text">{{ text }}</h1>
+    <img *ngIf="image" [src]="image"/>
   </span>
 </div>
