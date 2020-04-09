@@ -5,7 +5,26 @@
 <p>
   for example: <b>fadeIn</b>
 </p>
-<div [@fadeIn]="show" (click)="show = !show;">
+<div
+    [@fadeIn]="showFadeIn"
+    [@fadeOut]="showFadeOut"
+    [@fadeInDown]="showFadeInDown"
+    [@fadeOutDown]="showFadeOutDown"
+    [@fadeOutUp]="showFadeOutUp"
+    [@fadeOutUpBig]="showFadeOutUpBig"
+    [@fadeInUp]="showFadeInUp"
+    [@fadeInDownBig]="showFadeInDownBig"
+    [@fadeOutDownBig]="showFadeOutDownBig"
+    [@fadeInUpBig]="showFadeInUpBig"
+    [@fadeInRightBig]="showFadeInRightBig"
+    [@fadeOutLeftBig]="showFadeOutLeftBig"
+    [@fadeInLeft]="showFadeInLeft"
+    [@fadeInLeftBig]="showFadeInLeftBig"
+    [@fadeInRight]="showFadeInRight"
+    [@fadeOutLeft]="showFadeOutLeft"
+    [@fadeOutRight]="showFadeOutRight"
+    [@fadeOutRightBig]="showFadeOutRightBig"
+    (click)="changeShow()">
   <span class="text">
     <h1>{{ text }}</h1>
     <img *ngIf="image" [src]="image"/>

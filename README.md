@@ -57,7 +57,9 @@ And then, you can use the animations into the html of the component like this:
 or
 <app-bounce-animation showBounceOutUp="true" text="https://davidmartinezros.com"></app-bounce-animation>
 or
-<app-fade-animation image="assets/image.jpg"></app-fade-animation>
+<app-fade-animation showFadeIn="true" image="assets/image.jpg"></app-fade-animation>
+or
+<app-fade-animation showFadeInRight="true" image="assets/image.jpg"></app-fade-animation>
 or
 <app-flip-animation text="davidnezan@gmail.com" image="assets/image.jpg"></app-flip-animation>
 ```
