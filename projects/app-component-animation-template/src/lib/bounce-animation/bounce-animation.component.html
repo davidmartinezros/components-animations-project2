@@ -5,7 +5,18 @@
 <p>
   for example: <b>bounceIn</b>
 </p>
-<div [@bounceIn]="show" (click)="show = !show;">
+<div 
+      [@bounceIn]="showBounceIn"
+      [@bounceOut]="showBounceOut"
+      [@bounceInDown]="showBounceInDown"
+      [@bounceOutDown]="showBounceOutDown"
+      [@bounceInUp]="showBounceInUp"
+      [@bounceOutUp]="showBounceOutUp"
+      [@bounceInLeft]="showBounceInLeft"
+      [@bounceOutLeft]="showBounceOutLeft"
+      [@bounceInRight]="showBounceInRight"
+      [@bounceOutRight]="showBounceOutRight"
+      (click)="changeShow()">
   <span class="text">
     <h1 *ngIf="text">{{ text }}</h1>
     <img *ngIf="image" [src]="image"/>

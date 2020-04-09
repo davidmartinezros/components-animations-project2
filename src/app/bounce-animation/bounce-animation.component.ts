@@ -108,6 +108,84 @@ export class BounceAnimationComponent {
   @Input() text: String;
   @Input() image: String;
 
-  show: boolean = false;
-  
+  whichToShow: String = "";
+
+  @Input() showBounceIn: boolean = false;
+  @Input() showBounceOut: boolean = false;
+  @Input() showBounceInDown: boolean = false;
+  @Input() showBounceOutDown: boolean = false;
+  @Input() showBounceInUp: boolean = false;
+  @Input() showBounceOutUp: boolean = false;
+  @Input() showBounceInLeft: boolean = false;
+  @Input() showBounceOutLeft: boolean = false;
+  @Input() showBounceInRight: boolean = false;
+  @Input() showBounceOutRight: boolean = false;
+
+  ngOnInit() {
+    if(this.showBounceIn) {
+      this.whichToShow = "showBounceIn";
+    }
+    if(this.showBounceOut) {
+      this.whichToShow = "showBounceOut";
+    }
+    if(this.showBounceInDown) {
+      this.whichToShow = "showBounceInDown";
+    }
+    if(this.showBounceOutDown) {
+      this.whichToShow = "showBounceOutDown";
+    }
+    if(this.showBounceInUp) {
+      this.whichToShow = "showBounceInUp";
+    }
+    if(this.showBounceOutUp) {
+      this.whichToShow = "showBounceOutUp";
+    }
+    if(this.showBounceInLeft) {
+      this.whichToShow = "showBounceInLeft";
+    }
+    if( this.showBounceOutLeft) {
+      this.whichToShow = "showBounceOutLeft";
+    }
+    if(this.showBounceInRight) {
+      this.whichToShow = "showBounceInRight";
+    }
+    if(this.showBounceOutRight) {
+      this.whichToShow = "showBounceOutRight";
+    }
+  }
+
+  changeShow() {
+    switch(this.whichToShow) {
+      case "showBounceIn":
+        this.showBounceIn = !this.showBounceIn;
+        break;
+      case "showBounceOut":
+        this.showBounceOut = !this.showBounceOut;
+        break;
+      case "showBounceInDown":
+        this.showBounceInDown = !this.showBounceInDown;
+        break;
+      case "showBounceOutDown":
+        this.showBounceOutDown = !this.showBounceOutDown;
+        break;
+      case "showBounceInUp":
+        this.showBounceInUp = !this.showBounceInUp;
+        break;
+      case "showBounceOutUp":
+        this.showBounceOutUp = !this.showBounceOutUp;
+        break;
+      case "showBounceInLeft":
+        this.showBounceInLeft = !this.showBounceInLeft;
+        break;
+      case "showBounceOutLeft":
+        this.showBounceOutLeft = !this.showBounceOutLeft;
+        break;
+      case "showBounceInRight":
+        this.showBounceInRight = !this.showBounceInRight;
+        break;
+      case "showBounceOutRight":
+        this.showBounceOutRight = !this.showBounceOutRight;
+        break;
+    }
+  }
 }

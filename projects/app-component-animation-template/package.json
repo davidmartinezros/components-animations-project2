@@ -1,6 +1,6 @@
 {
   "name": "app-component-animation-template",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "description": "An easy implementation of component animations for Angular, where you can load the animation into any text or whatever you want.",
   "author": "David Martinez Ros",

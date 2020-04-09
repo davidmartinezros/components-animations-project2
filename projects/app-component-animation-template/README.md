@@ -53,7 +53,9 @@ export class AppModule { }
 And then, you can use the animations into the html of the component like this:
 
 ```
-<app-bounce-animation text="https://davidmartinezros.com"></app-bounce-animation>
+<app-bounce-animation showBounceIn="true" text="https://davidmartinezros.com"></app-bounce-animation>
+or
+<app-bounce-animation showBounceOutUp="true" text="https://davidmartinezros.com"></app-bounce-animation>
 or
 <app-fade-animation image="assets/image.jpg"></app-fade-animation>
 or
