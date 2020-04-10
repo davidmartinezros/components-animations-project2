@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
     <h1>My Portfolio <a href="https://davidmartinezros.com" target="_blank">davidmartinezros.com</a></h1>
     <div>
       <app-bounce-animation showBounceIn="true" text="hola" image="assets/image.jpg"></app-bounce-animation>
-      <app-fade-animation text="hola" image="assets/image.jpg"></app-fade-animation>
-      <app-flip-animation text="hola" image="assets/image.jpg"></app-flip-animation>
-      <app-others-animation text="hola" image="assets/image.jpg"></app-others-animation>
+      <app-fade-animation showFadeIn="true" text="hola" image="assets/image.jpg"></app-fade-animation>
+      <app-flip-animation showFlip="true" text="hola" image="assets/image.jpg"></app-flip-animation>
+      <app-others-animation showShake="true" text="hola" image="assets/image.jpg"></app-others-animation>
       <app-roll-animation text="hola" image="assets/image.jpg"></app-roll-animation>
       <app-rotate-animation text="hola" image="assets/image.jpg"></app-rotate-animation>
       <app-zoom-animation text="hola" image="assets/image.jpg"></app-zoom-animation>

@@ -5,7 +5,19 @@
 <p>
   for example: <b>flash</b>
 </p>
-<div [@flash]="show" (click)="show = !show;">
+<div
+  [@flash]="showFlash"
+  [@pulse]="showPulse"
+  [@rubberBand]="showRubberBand"
+  [@lightSpeedInRight]="showLightSpeedInRight"
+  [@lightSpeedOutRight]="showLightSpeedOutRight"
+  [@lightSpeedInLeft]="showLightSpeedInLeft"
+  [@lightSpeedOutLeft]="showLightSpeedOutLeft"
+  [@shake]="showShake"
+  [@swing]="showSwing"
+  [@tada]="showTada"
+  [@wobble]="showWobble"
+  (click)="changeShow()">
   <span class="text">
     <h1>{{ text }}</h1>
     <img *ngIf="image" [src]="image"/>

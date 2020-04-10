@@ -118,6 +118,93 @@ export class OthersAnimationComponent {
   @Input() text: String;
   @Input() image: String;
   
-  show: boolean = false;
+  whichToShow: String = "";
+
+  @Input() showFlash: boolean = false;
+  @Input() showPulse: boolean = false;
+  @Input() showRubberBand: boolean = false;
+  @Input() showLightSpeedInRight: boolean = false;
+  @Input() showLightSpeedOutRight: boolean = false;
+  @Input() showLightSpeedInLeft: boolean = false;
+  @Input() showLightSpeedOutLeft: boolean = false;
+  @Input() showShake: boolean = false;
+  @Input() showSwing: boolean = false;
+  @Input() showTada: boolean = false;
+  @Input() showWobble: boolean = false;
+
+  ngOnInit() {
+    if(this.showFlash) {
+      this.whichToShow = "showFlash";
+    }
+    if(this.showPulse) {
+      this.whichToShow = "showPulse";
+    }
+    if(this.showRubberBand) {
+      this.whichToShow = "showRubberBand";
+    }
+    if(this.showLightSpeedInRight) {
+      this.whichToShow = "showLightSpeedInRight";
+    }
+    if(this.showLightSpeedOutRight) {
+      this.whichToShow = "showLightSpeedOutRight";
+    }
+    if(this.showLightSpeedInLeft) {
+      this.whichToShow = "showLightSpeedInLeft";
+    }
+    if(this.showLightSpeedOutLeft) {
+      this.whichToShow = "showLightSpeedOutLeft";
+    }
+    if(this.showShake) {
+      this.whichToShow = "showShake";
+    }
+    if(this.showSwing) {
+      this.whichToShow = "showSwing";
+    }
+    if(this.showTada) {
+      this.whichToShow = "showTada";
+    }
+    if(this.showWobble) {
+      this.whichToShow = "showWobble";
+    }
+
+  }
+
+  changeShow() {
+    switch(this.whichToShow) {
+      case "showFlash":
+        this.showFlash = !this.showFlash;
+        break;
+      case "showPulse":
+        this.showPulse = !this.showPulse;
+        break;
+      case "showRubberBand":
+        this.showRubberBand = !this.showRubberBand;
+        break;
+      case "showLightSpeedInRight":
+        this.showLightSpeedInRight = !this.showLightSpeedInRight;
+        break;
+      case "showLightSpeedOutRight":
+        this.showLightSpeedOutRight = !this.showLightSpeedOutRight;
+        break;
+      case "showLightSpeedInLeft":
+        this.showLightSpeedInLeft = !this.showLightSpeedInLeft;
+        break;
+      case "showLightSpeedOutLeft":
+        this.showLightSpeedOutLeft = !this.showLightSpeedOutLeft;
+        break;
+      case "showShake":
+        this.showShake = !this.showShake;
+        break;
+      case "showSwing":
+        this.showSwing = !this.showSwing;
+        break;
+      case "showTada":
+        this.showTada = !this.showTada;
+        break;
+      case "showWobble":
+        this.showWobble = !this.showWobble;
+        break;
+    }
+  }
   
 }

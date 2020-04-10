@@ -61,7 +61,15 @@ or
 or
 <app-fade-animation showFadeInRight="true" image="assets/image.jpg"></app-fade-animation>
 or
-<app-flip-animation text="davidnezan@gmail.com" image="assets/image.jpg"></app-flip-animation>
+<app-flip-animation showFlip="true" image="assets/image.jpg" text="https://davidmartinezros.com"></app-flip-animation>
+or
+<app-flip-animation showFlipInY="true" image="assets/image.jpg" text="https://davidmartinezros.com"></app-flip-animation>
+or
+<app-others-animation showShake="true" image="assets/image.jpg" text="https://davidmartinezros.com"></app-others-animation>
+or
+<app-others-animation showPulse="true" image="assets/image.jpg" text="https://davidmartinezros.com"></app-others-animation>
+or
+<app-zoom-animation text="davidnezan@gmail.com" image="assets/image.jpg"></app-zoom-animation>
 ```
 
 ## Demo Example

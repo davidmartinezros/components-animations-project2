@@ -54,6 +54,50 @@ export class FlipAnimationComponent {
   @Input() text: String;
   @Input() image: String;
   
-  show: boolean = false;
+  whichToShow: String = "";
+
+  @Input() showFlip: boolean = false;
+  @Input() showFlipInX: boolean = false;
+  @Input() showFlipOutX: boolean = false;
+  @Input() showFlipInY: boolean = false;
+  @Input() showFlipOutY: boolean = false;
+
+  ngOnInit() {
+    if(this.showFlip) {
+      this.whichToShow = "showFlip";
+    }
+    if(this.showFlipInX) {
+      this.whichToShow = "showFlipInX";
+    }
+    if(this.showFlipOutX) {
+      this.whichToShow = "showFlipOutX";
+    }
+    if(this.showFlipInY) {
+      this.whichToShow = "showFlipInY";
+    }
+    if(this.showFlipOutY) {
+      this.whichToShow = "showFlipOutY";
+    }
+  }
+
+  changeShow() {
+    switch(this.whichToShow) {
+      case "showFlip":
+        this.showFlip = !this.showFlip;
+        break;
+      case "showFlipInX":
+        this.showFlipInX = !this.showFlipInX;
+        break;
+      case "showFlipOutX":
+        this.showFlipOutX = !this.showFlipOutX;
+        break;
+      case "showFlipInY":
+        this.showFlipInY = !this.showFlipInY;
+        break;
+      case "showFlipOutY":
+        this.showFlipOutY = !this.showFlipOutY;
+        break;
+    }
+  }
   
 }

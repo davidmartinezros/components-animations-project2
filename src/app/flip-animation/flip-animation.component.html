@@ -5,7 +5,13 @@
 <p>
   for example: <b>flip</b>
 </p>
-<div [@flip]="show" (click)="show = !show;">
+<div 
+      [@flip]="showFlip"
+      [@flipInX]="showFlipInX"
+      [@flipOutX]="showFlipOutX"
+      [@flipInY]="showFlipInY"
+      [@flipOutY]="showFlipOutY"
+      (click)="changeShow()">
   <span class="text">
     <h1>{{ text }}</h1>
     <img *ngIf="image" [src]="image"/>
