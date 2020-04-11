@@ -5,7 +5,10 @@
 <p>
   for example: <b>rollIn</b>
 </p>
-<div [@rollIn]="show" (click)="show = !show;">
+<div
+  [@rollIn]="showRollIn"
+  [@rollOut]="showRollOut"
+  (click)="changeShow()">
   <span class="text">
     <h1>{{ text }}</h1>
     <img *ngIf="image" [src]="image"/>

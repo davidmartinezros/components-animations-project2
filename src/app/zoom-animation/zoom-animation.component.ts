@@ -74,6 +74,85 @@ export class ZoomAnimationComponent {
   @Input() text: String;
   @Input() image: String;
   
-  show: boolean = false;
+  whichToShow: String = "";
+
+  @Input() showZoomIn: boolean = false;
+  @Input() showZoomOutDown: boolean = false;
+  @Input() showZoomOutUp: boolean = false;
+  @Input() showZoomOutRight: boolean = false;
+  @Input() showZoomOutLeft: boolean = false;
+  @Input() showZoomInDown: boolean = false;
+  @Input() showZoomInLeft: boolean = false;
+  @Input() showZoomInRight: boolean = false;
+  @Input() showZoomInUp: boolean = false;
+  @Input() showZoomOut: boolean = false;
+
+  ngOnInit() {
+    if(this.showZoomIn) {
+      this.whichToShow = "showZoomIn";
+    }
+    if(this.showZoomOutDown) {
+      this.whichToShow = "showZoomOutDown";
+    }
+    if(this.showZoomOutUp) {
+      this.whichToShow = "showZoomOutUp";
+    }
+    if(this.showZoomOutRight) {
+      this.whichToShow = "showZoomOutRight";
+    }
+    if(this.showZoomOutLeft) {
+      this.whichToShow = "showZoomOutLeft";
+    }
+    if(this.showZoomInDown) {
+      this.whichToShow = "showZoomInDown";
+    }
+    if(this.showZoomInLeft) {
+      this.whichToShow = "showZoomInLeft";
+    }
+    if(this.showZoomInRight) {
+      this.whichToShow = "showZoomInRight";
+    }
+    if(this.showZoomInUp) {
+      this.whichToShow = "showZoomInUp";
+    }
+    if(this.showZoomOut) {
+      this.whichToShow = "showZoomOut";
+    }
+  }
+
+  changeShow() {
+    switch(this.whichToShow) {
+      case "showZoomIn":
+        this.showZoomIn = !this.showZoomIn;
+        break;
+      case "showZoomOutDown":
+        this.showZoomOutDown = !this.showZoomOutDown;
+        break;
+      case "showZoomOutUp":
+        this.showZoomOutUp = !this.showZoomOutUp;
+        break;
+      case "showZoomOutRight":
+        this.showZoomOutRight = !this.showZoomOutRight;
+        break;
+      case "showZoomOutLeft":
+        this.showZoomOutLeft = !this.showZoomOutLeft;
+        break;
+      case "showZoomInDown":
+        this.showZoomInDown = !this.showZoomInDown;
+        break;
+      case "showZoomInLeft":
+        this.showZoomInLeft = !this.showZoomInLeft;
+        break;
+      case "showZoomInRight":
+        this.showZoomInRight = !this.showZoomInRight;
+        break;
+      case "showZoomInUp":
+        this.showZoomInUp = !this.showZoomInUp;
+        break;
+      case "showZoomOut":
+        this.showZoomOut = !this.showZoomOut;
+        break;
+    }
+  }
 
 }

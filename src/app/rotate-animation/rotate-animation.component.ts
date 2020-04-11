@@ -73,6 +73,79 @@ export class RotateAnimationComponent {
   @Input() text: String;
   @Input() image: String;
   
-  show: boolean = false;
+  whichToShow: String = "";
+
+  @Input() showRotateIn: boolean = false;
+  @Input() showRotateInDownLeft: boolean = false;
+  @Input() showRotateInDownRight: boolean = false;
+  @Input() showRotateInUpLeft: boolean = false;
+  @Input() showRotateInUpRight: boolean = false;
+  @Input() showRotateOutDownLeft: boolean = false;
+  @Input() showRotateOutDownRight: boolean = false;
+  @Input() showRotateOutUpLeft: boolean = false;
+  @Input() showRotateOutUpRight: boolean = false;
+  @Input() showRotateOut: boolean = false;
+
+  ngOnInit() {
+    if(this.showRotateIn) {
+      this.whichToShow = "showRotateIn";
+    }
+    if(this.showRotateInDownLeft) {
+      this.whichToShow = "showRotateInDownLeft";
+    }
+    if(this.showRotateInDownRight) {
+      this.whichToShow = "showRotateInDownRight";
+    }
+    if(this.showRotateInUpLeft) {
+      this.whichToShow = "showRotateInUpLeft";
+    }
+    if(this.showRotateInUpRight) {
+      this.whichToShow = "showRotateInUpRight";
+    }
+    if(this.showRotateOutDownLeft) {
+      this.whichToShow = "showRotateOutDownLeft";
+    }
+    if(this.showRotateOutDownRight) {
+      this.whichToShow = "showRotateOutDownRight";
+    }
+    if(this.showRotateOutUpRight) {
+      this.whichToShow = "showRotateOutUpRight";
+    }
+    if(this.showRotateOut) {
+      this.whichToShow = "showRotateOut";
+    }
+  }
+
+  changeShow() {
+    switch(this.whichToShow) {
+      case "showRotateIn":
+        this.showRotateIn = !this.showRotateIn;
+        break;
+      case "showRotateInDownLeft":
+        this.showRotateInDownLeft = !this.showRotateInDownLeft;
+        break;
+      case "showRotateInDownRight":
+        this.showRotateInDownRight = !this.showRotateInDownRight;
+        break;
+      case "showRotateInUpLeft":
+        this.showRotateInUpLeft = !this.showRotateInUpLeft;
+        break;
+      case "showRotateInUpRight":
+        this.showRotateInUpRight = !this.showRotateInUpRight;
+        break;
+      case "showRotateOutDownLeft":
+        this.showRotateOutDownLeft = !this.showRotateOutDownLeft;
+        break;
+      case "showRotateOutDownRight":
+        this.showRotateOutDownRight = !this.showRotateOutDownRight;
+        break;
+      case "showRotateOutUpRight":
+        this.showRotateOutUpRight = !this.showRotateOutUpRight;
+        break;
+      case "showRotateOut":
+        this.showRotateOut = !this.showRotateOut;
+        break;
+    }
+  }
 
 }

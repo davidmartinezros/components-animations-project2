@@ -25,6 +25,29 @@ export class RollAnimationComponent {
   @Input() text: String;
   @Input() image: String;
   
-  show: boolean = false;
+  whichToShow: String = "";
+
+  @Input() showRollIn: boolean = false;
+  @Input() showRollOut: boolean = false;
+
+  ngOnInit() {
+    if(this.showRollIn) {
+      this.whichToShow = "showRollIn";
+    }
+    if(this.showRollOut) {
+      this.whichToShow = "showRollOut";
+    }
+  }
+
+  changeShow() {
+    switch(this.whichToShow) {
+      case "showRollIn":
+        this.showRollIn = !this.showRollIn;
+        break;
+      case "showRollOut":
+        this.showRollOut = !this.showRollOut;
+        break;
+    }
+  }
   
 }

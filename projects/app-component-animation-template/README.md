@@ -69,7 +69,17 @@ or
 or
 <app-others-animation showPulse="true" image="assets/image.jpg" text="https://davidmartinezros.com"></app-others-animation>
 or
-<app-zoom-animation text="davidnezan@gmail.com" image="assets/image.jpg"></app-zoom-animation>
+<app-roll-animation showRollIn="true" image="assets/image.jpg" text="davidnezan@gmail.com"></app-roll-animation>
+or
+<app-roll-animation showRollOut="true" image="assets/image.jpg" text="davidnezan@gmail.com"></app-roll-animation>
+or
+<app-rotate-animation showRotateIn="true" image="assets/image.jpg" text="davidnezan@gmail.com"></app-rotate-animation>
+or
+<app-rotate-animation showRotateOutDownRight="true" image="assets/image.jpg" text="davidnezan@gmail.com"></app-rotate-animation>
+or
+<app-zoom-animation showZoomIn="true" image="assets/image.jpg" text="davidnezan@gmail.com"></app-zoom-animation>
+or
+<app-zoom-animation showZoomInLeft="true" image="assets/image.jpg" text="davidnezan@gmail.com"></app-zoom-animation>
 ```
 
 ## Demo Example

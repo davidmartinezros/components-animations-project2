@@ -5,7 +5,18 @@
 <p>
   for example: <b>zoomIn</b>
 </p>
-<div [@zoomIn]="show" (click)="show = !show;">
+<div
+  [@zoomIn]="showZoomIn"
+  [@zoomOutDown]="showZoomOutDown"
+  [@zoomOutUp]="showZoomOutUp"
+  [@zoomOutRight]="showZoomOutRight"
+  [@zoomOutLeft]="showZoomOutLeft"
+  [@zoomInDown]="showZoomInDown"
+  [@zoomInLeft]="showZoomInLeft"
+  [@zoomInRight]="showZoomInRight"
+  [@zoomInUp]="showZoomInUp"
+  [@zoomOut]="showZoomOut"
+  (click)="changeShow()">
   <span class="text">
     <h1>{{ text }}</h1>
     <img *ngIf="image" [src]="image"/>

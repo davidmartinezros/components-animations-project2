@@ -5,7 +5,18 @@
 <p>
   for example: <b>rotateIn</b>
 </p>
-<div [@rotateIn]="show" (click)="show = !show;">
+<div
+  [@rotateIn]="showRotateIn"
+  [@rotateInDownLeft]="showRotateInDownLeft"
+  [@rotateInDownRight]="showRotateInDownRight"
+  [@rotateInUpLeft]="showRotateInUpLeft"
+  [@rotateInUpRight]="showRotateInUpRight"
+  [@rotateOutDownLeft]="showRotateOutDownLeft"
+  [@rotateOutDownRight]="showRotateOutDownRight"
+  [@rotateOutUpLeft]="showRotateOutUpLeft"
+  [@rotateOutUpRight]="showRotateOutUpRight"
+  [@rotateOut]="showRotateOut"
+  (click)="changeShow()">
   <span class="text">
     <h1>{{ text }}</h1>
     <img *ngIf="image" [src]="image"/>
