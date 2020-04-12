@@ -1,7 +1,7 @@
 ## DESCRIPTION
 The component is an easy representation of an animation of a component.
 
-It could be useful for intros or presentations with animations of texts or images or texts and images together.
+It could be useful for introductions or presentations with animations of texts or images or texts and images together.
 
 ## load animations into components in an easy way with app-component-animation-template
 This project was generated with Angular CLI and is designed as a basic template combined with Angular.
